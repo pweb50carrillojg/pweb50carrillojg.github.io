@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Datos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Datos</h1>
+    </header>
+    <form id="forma" action="javascript:enviar()">
+    <p>
+      <label accesskey="N">
+        Nombre<br>
+        <input name="nombre" type="text" autofocus required minlength="1" maxlength="50"
+              placeholder="1 a 50 caracteres">
+      </label>
+      <br><output id="salidaNombre"></output>
+    </p>
+    <p>
+      <label accesskey="B">
+        Boleta<br>
+        <input name="boleta" type="text" required minlength="10" placeholder="10 dígitos">
+      </label>
+      <br><output id="salidaBoleta"></output>
+    </p>
+    <p>
+      <label accesskey="G">
+        Grupo<br>
+        <input name="grupo" type="text" required minlength="5" placeholder="Introduce tu grupo">
+      </label>
+      <br><output id="salidaGrupo"></output>
+    </p>
+    <p>
+      <label accesskey="M">
+        Materia<br>
+        <input name="materia" type="text" required minlength="1" placeholder="Introduce tu materia">
+      </label>
+      <br><output id="salidaMateria"></output>
+    </p>
+    <p>
+      <p>
+        <label accesskey="F">
+          Fecha<br>
+          <input name="fecha" type="date">
+        </label>
+        <br><output id="salidaFecha"></output>
+      </p>
+    </p>
+    <input type="submit" value="Enviar" accesskey="E">
+    <br><output id="salidaDatos"></output>
+  </form>
+  <script src="js/CtrlDatos.js"></script>
+  <footer>
+    Copyright 2021 José G. Carrillo 
+  </footer>
+  </body>
+</html>
